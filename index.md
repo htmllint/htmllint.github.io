@@ -5,7 +5,9 @@ layout: page
 
 This is a [Comp523][] project at UNC in the fall of 2014. The goal is to create an html5
 linter and validator. The linter will be an npm module and should be usable as a Grunt
-plugin.
+plugin. Some solutions exist for validation and linting html, but many aren't
+configurable or require an outside service. The purpose of this module is to provide
+a highly configurable, open source alternative.
 
 ## People
 
