@@ -13,8 +13,8 @@ a highly configurable, open source alternative.
 
 ### Team
 
-* Project Manager: [Andrew Messier](https://github.com/messman), [amessier@cs.unc.edu](mailto:amessier@cs.unc.edu)
-* Client Manager: [Roman Myers](https://github.com/romnempire), [rbmyers@live.unc.edu](mailto:rbmyers@live.unc.edu)
+* Project Manager: [Roman Myers](https://github.com/romnempire), [rbmyers@live.unc.edu](mailto:rbmyers@live.unc.edu)
+* Client Manager: [Andrew Messier](https://github.com/messman), [amessier@cs.unc.edu](mailto:amessier@cs.unc.edu)
 * Editor: [Marshall Lochbaum](https://github.com/mlochbaum), [mlochbau@live.unc.edu](mailto:mlochbau@live.unc.edu)
 * Chief Developer: [Michael Coleman](https://github.com/Coalman), [mkcolema@cs.unc.edu](mailto:mkcolema@cs.unc.edu)
 
