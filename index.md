@@ -24,3 +24,7 @@ a highly configurable, open source alternative.
 * Michael Barlock, [elf13oy@gmail.com](mailto:elf13oy@gmail.com)
 
 [Comp523]: http://wwwx.cs.unc.edu/Courses/comp523-f14/
+
+### Deliverables
+
+[Personas & User Stories](https://github.com/htmllint/htmllint/wiki/Personas-%26-User-Stories)
