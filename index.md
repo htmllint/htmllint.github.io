@@ -3,7 +3,7 @@ layout: page
 ---
 # Introduction
 
-This is a [Comp523][] project at UNC in the fall of 2014. The goal is to create an html5
+This is a <a href="https://wwwx.cs.unc.edu/Courses/comp523-f14/index.php" target="_blank">Comp 523</a> project at UNC in the fall of 2014. The goal is to create an html5
 linter and validator. The linter will be an npm module and should be usable as a Grunt
 plugin. Some solutions exist for validation and linting html, but many aren't
 configurable or require an outside service. The purpose of this module is to provide
@@ -27,4 +27,5 @@ a highly configurable, open source alternative.
 
 ### Deliverables
 
-[Personas & User Stories](https://github.com/htmllint/htmllint/wiki/Personas-%26-User-Stories)
+<a href="https://github.com/htmllint/htmllint/wiki/Personas-%26-User-Stories" target="_blank">Personas & User Stories</a>
+<a href="https://github.com/htmllint/htmllint/wiki/Journal-of-Functional-Spec-Review" target="_blank">Functional Specification Review Journal Entry</a>
