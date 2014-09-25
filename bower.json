@@ -1,0 +1,9 @@
+{
+  "name": "htmllint.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/htmllint/htmllint.github.io",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}

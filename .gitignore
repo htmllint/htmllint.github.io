@@ -1,0 +1,8 @@
+# bower
+vendor
+
+# node
+node_modules
+
+# builds
+dist
