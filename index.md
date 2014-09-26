@@ -30,3 +30,4 @@ a highly configurable, open source alternative.
 * <a href="https://github.com/htmllint/htmllint/wiki/Personas-%26-User-Stories" target="_blank">Personas & User Stories</a>
 * <a href="https://github.com/htmllint/htmllint/wiki/Journal-of-Functional-Spec-Review" target="_blank">Functional Specification Review Journal Entry</a>
 * <a href="https://github.com/htmllint/htmllint/wiki/Architecture" target="_blank">Architecture Diagram</a>
+* <a href="https://docs.google.com/spreadsheets/d/1BjjpTSiHyapiYvnqbZhy6TeMaymHNPGO1d1B6PNL4IM/edit#gid=0" target="_blank">Schedule (Google Spreadsheet)</a>
