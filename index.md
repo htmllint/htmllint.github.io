@@ -32,3 +32,4 @@ a highly configurable, open source alternative.
 * <a href="https://github.com/htmllint/htmllint/wiki/Architecture" target="_blank">Architecture Diagram</a>
 * <a href="https://docs.google.com/spreadsheets/d/1BjjpTSiHyapiYvnqbZhy6TeMaymHNPGO1d1B6PNL4IM/edit#gid=0" target="_blank">Schedule (Google Spreadsheet)</a>
 * <a href="https://waffle.io/htmllint/htmllint" target="_blank">Waffle.io - Github Issues</a>
+* <a href="https://docs.google.com/presentation/d/1Dw5iwTgDaKuoF7TrSzcWgqtnyMUiBYufwMEKLzGKMdc/edit#slide=id.p" target="_blank">Google Presentation for Demo 1</a>
