@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+  head
+    block title
+      title htmllint
+    link(href="css/style.css" rel="stylesheet" type="text/css")
+  body
+    include ./header.jade
+
+    block content
+
+    include ./footer.jade
+
+    script(src="https://code.jquery.com/jquery-1.11.1.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js")
+    block bottom

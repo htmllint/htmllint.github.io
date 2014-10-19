@@ -1,0 +1,14 @@
+extends ./partials/layout.jade
+
+block title
+  title htmllint - demo
+
+block content
+  .container
+    .row
+      .col-xs-6
+        #editor
+
+block bottom
+  script(src="//cdn.jsdelivr.net/ace/1.1.7/min/ace.js")
+  script(src="/js/demo.js")

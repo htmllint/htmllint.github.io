@@ -1,7 +1,12 @@
-doctype html
-html(lang="en")
-  head
-    title htmllint
-    link(href="css/style.css")
-  body
-    h1 htmllint
+extends ./partials/layout.jade
+
+block content
+  main.jumbotron
+    .container
+      h1 htmllint
+      h2 An unofficial html5 linter.
+
+  .container
+    .row
+      .col-xs-12
+        include:markdown ./content/about.md
