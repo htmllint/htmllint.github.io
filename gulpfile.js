@@ -2,6 +2,7 @@ var gulp = require('gulp'),
     browserify = require('browserify'),
     browserSync = require('browser-sync'),
     del = require('del'),
+    deploy = require('gulp-gh-pages'),
     jade = require('gulp-jade'),
     run = require('run-sequence'),
     sass = require('gulp-sass'),
@@ -12,10 +13,18 @@ var reload = browserSync.reload;
 const HTML_SRC = 'src/**/*.jade',
       CSS_SRC = 'src/**/*.scss',
       JS_SRC = ['./src/js/demo.js'],
-      DEST = 'dist';
+      DEST = 'dist',
+      DEPLOY = 'dist/**/*';
 
 gulp.task('default', ['dev']);
-gulp.task('deploy', ['build']);
+gulp.task('deploy', ['build'], function () {
+    return gulp.src(DEPLOY)
+        .pipe(deploy({
+            branch: 'master',
+            cacheDir: '.tmp'
+        }));
+});
+
 gulp.task('build', function (cb) {
     run('clean', [
         'build:jade',
