@@ -9,6 +9,7 @@
   "license": "ISC",
   "homepage": "htmllint.github.io",
   "devDependencies": {
+    "brfs": "^1.2.0",
     "browser-sync": "^1.5.8",
     "browserify": "^6.1.0",
     "browserify-shim": "^3.8.0",
@@ -31,7 +32,8 @@
   "browserify": {
     "transform": [
       ["reactify", {"es6": true}],
-      "browserify-shim"
+      "browserify-shim",
+      "brfs"
     ]
   }
 }

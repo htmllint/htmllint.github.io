@@ -1,3 +1,20 @@
-#editor {
+.editor {
     min-height: 300px;
+    position: relative;
+}
+
+#editor {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.issue-list {
+    min-height: 300px;
+}
+
+.content {
+    margin-top: 15px;
 }

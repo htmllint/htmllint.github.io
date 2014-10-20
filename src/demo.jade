@@ -4,12 +4,16 @@ block title
   title htmllint - demo
 
 block content
-  .container
+  .container.content
     .row
       .col-xs-6
-        #editor
+        .editor.panel(class="panel-default")
+          .panel-body: #editor
       .col-xs-6
-        #issue-list
+        .issue-list.panel(class="panel-default")
+          .panel-heading
+            h3.panel-title Issues
+          #issue-list.panel-body
 
 block bottom
   script(src="http://fb.me/react-0.11.2.js")
