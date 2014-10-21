@@ -17,31 +17,14 @@ const HTML_SRC = 'src/**/*.jade',
       DEST = 'dist',
       DEPLOY = 'dist/**/*';
 
-gulp.task('default', ['dev']);
-gulp.task('deploy', ['build'], function () {
-    return gulp.src(DEPLOY)
-        .pipe(deploy({
-            branch: 'master',
-            cacheDir: '.tmp'
-        }));
-});
-
-gulp.task('build', function (cb) {
-    run('clean', [
-        'build:jade',
-        'build:sass',
-        'build:js'
-    ], cb);
-});
-gulp.task('dev', function (cb) {
-    run('build',
-        'preview',
-        'watch',
-        cb);
-});
-
-gulp.task('clean', function (cb) {
-    del(DEST, cb);
+gulp.task('build:js', function () {
+    return browserify({
+        entries: JS_MAIN,
+        debug: true
+    }).bundle()
+        .pipe(source('js/demo.js'))
+        .pipe(gulp.dest(DEST))
+        .pipe(reload({stream: true}));
 });
 
 gulp.task('build:jade', function () {
@@ -60,14 +43,8 @@ gulp.task('build:sass', function () {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('build:js', function () {
-    return browserify({
-        entries: JS_MAIN,
-        debug: true
-    }).bundle()
-        .pipe(source('js/demo.js'))
-        .pipe(gulp.dest(DEST))
-        .pipe(reload({stream: true}));
+gulp.task('clean', function (cb) {
+    del(DEST, cb);
 });
 
 gulp.task('preview', function () {
@@ -83,3 +60,28 @@ gulp.task('watch', function () {
     gulp.watch(CSS_SRC, ['build:sass']);
     gulp.watch(JS_SRC, ['build:js']);
 });
+
+gulp.task('build', function (cb) {
+    run('clean', [
+        'build:jade',
+        'build:sass',
+        'build:js'
+    ], cb);
+});
+
+gulp.task('dev', function (cb) {
+    run('build',
+        'preview',
+        'watch',
+        cb);
+});
+
+gulp.task('deploy', ['build'], function () {
+    return gulp.src(DEPLOY)
+        .pipe(deploy({
+            branch: 'master',
+            cacheDir: '.tmp'
+        }));
+});
+
+gulp.task('default', ['dev']);
