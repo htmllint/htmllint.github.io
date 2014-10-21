@@ -1,4 +1,3 @@
-/** @jsx React.DOM */
 var React = require('react');
 
 var Issue = React.createClass({
@@ -7,7 +6,7 @@ var Issue = React.createClass({
 
         return (
 	    <div>
-            <span>({issue.line}, {issue.column}): </span>
+            <span>line: {issue.line} col: {issue.column}, </span>
             <span>{issue.msg}</span>
             </div>
 	);
