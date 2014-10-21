@@ -12,7 +12,8 @@ var reload = browserSync.reload;
 // paths
 const HTML_SRC = 'src/**/*.jade',
       CSS_SRC = 'src/**/*.scss',
-      JS_SRC = ['./src/js/demo.js'],
+      JS_MAIN = ['./src/js/demo.js'],
+      JS_SRC = './src/js/*.js*',
       DEST = 'dist',
       DEPLOY = 'dist/**/*';
 
@@ -61,7 +62,7 @@ gulp.task('build:sass', function () {
 
 gulp.task('build:js', function () {
     return browserify({
-        entries: JS_SRC,
+        entries: JS_MAIN,
         debug: true
     }).bundle()
         .pipe(source('js/demo.js'))
