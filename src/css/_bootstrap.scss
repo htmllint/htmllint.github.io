@@ -2,6 +2,9 @@
 @import "../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
 @import "../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins";
 
+@import "vars";
+@import "mixins";
+
 // Reset and dependencies
 @import "../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/normalize";
 @import "../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/print";
