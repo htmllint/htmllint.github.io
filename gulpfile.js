@@ -6,7 +6,8 @@ var gulp = require('gulp'),
     jade = require('gulp-jade'),
     run = require('run-sequence'),
     sass = require('gulp-sass'),
-    source = require('vinyl-source-stream');
+    source = require('vinyl-source-stream'),
+    sourcemaps = require('gulp-sourcemaps');
 var reload = browserSync.reload;
 
 // paths
@@ -36,9 +37,11 @@ gulp.task('build:jade', function () {
 
 gulp.task('build:sass', function () {
     return gulp.src(CSS_SRC)
+        .pipe(sourcemaps.init())
         .pipe(sass({
             errLogToConsole: true
         }))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest(DEST))
         .pipe(reload({stream: true}));
 });

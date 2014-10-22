@@ -19,6 +19,7 @@
     "gulp-gh-pages": "^0.4.0",
     "gulp-jade": "^0.9.0",
     "gulp-sass": "^1.2.0",
+    "gulp-sourcemaps": "^1.2.4",
     "marked": "^0.3.2",
     "reactify": "^0.14.0",
     "run-sequence": "^1.0.1",
