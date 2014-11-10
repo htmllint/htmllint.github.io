@@ -18,15 +18,9 @@ view.updateTxt(example);
  * @param {String} html - the html to lint
  */
 function lint(html) {
-    var issues = [];
-
-    // try to lint the html
-    try {
-        issues = htmllint(html);
-    } catch (e) {
-        console.error(e);
-    }
-
-    // update the view
-    view.update(issues);
+    htmllint(html).then(function (issues) {
+        view.update(issues);
+    }, function (err) {
+        console.error(err);
+    });
 };
