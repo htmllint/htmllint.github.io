@@ -24,9 +24,11 @@ a highly configurable, open source alternative.
 
 ### Deliverables
 
+* <a href="https://github.com/htmllint/htmllint/wiki/htmllint-manual" target="_blank">User Manual</a>
 * <a href="https://github.com/htmllint/htmllint/wiki/Personas-%26-User-Stories" target="_blank">Personas & User Stories</a>
 * <a href="https://github.com/htmllint/htmllint/wiki/Journal-of-Functional-Spec-Review" target="_blank">Functional Specification Review Journal Entry</a>
 * <a href="https://github.com/htmllint/htmllint/wiki/Architecture" target="_blank">Architecture Diagram</a>
 * <a href="https://docs.google.com/spreadsheets/d/1BjjpTSiHyapiYvnqbZhy6TeMaymHNPGO1d1B6PNL4IM/edit#gid=0" target="_blank">Schedule (Google Spreadsheet)</a>
 * <a href="https://waffle.io/htmllint/htmllint" target="_blank">Waffle.io - Github Issues</a>
 * <a href="https://docs.google.com/presentation/d/1Dw5iwTgDaKuoF7TrSzcWgqtnyMUiBYufwMEKLzGKMdc/edit#slide=id.p" target="_blank">Google Presentation for Demo 1</a>
+* <a href="https://docs.google.com/presentation/d/1IB55p6hD84F9iG0yeysk50068oOSmZV9NEGRoIxjKZg/edit?usp=sharing:" target="_blank">Google Presentation for Tech Talk on Browserify and Node.js</a>
