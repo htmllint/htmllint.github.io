@@ -1,0 +1,10 @@
+extends ./partials/layout.jade
+
+block title
+  title htmllint - options
+
+block content
+  .container.content
+    .row
+      .col-xs-12
+        include:markdown ../.tmp/opts.md

@@ -1,13 +1,16 @@
 var gulp = require('gulp'),
     browserify = require('browserify'),
     browserSync = require('browser-sync'),
+    concat = require('gulp-concat'),
     del = require('del'),
     deploy = require('gulp-gh-pages'),
     jade = require('gulp-jade'),
+    path = require('path'),
     run = require('run-sequence'),
     sass = require('gulp-sass'),
     source = require('vinyl-source-stream'),
-    sourcemaps = require('gulp-sourcemaps');
+    sourcemaps = require('gulp-sourcemaps'),
+    tap = require('gulp-tap');
 var reload = browserSync.reload;
 
 // paths
@@ -28,7 +31,19 @@ gulp.task('build:js', function () {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('build:jade', function () {
+gulp.task('build:content', function () {
+    return gulp.src('htmllint/docs/options/*.md')
+        .pipe(tap(function (file) {
+            file.contents = Buffer.concat([
+                new Buffer('## ' + path.basename(file.path, '.md') + '\n'),
+                file.contents
+            ]);
+        }))
+        .pipe(concat('opts.md'))
+        .pipe(gulp.dest('.tmp'));
+});
+
+gulp.task('build:jade', ['build:content'], function () {
     return gulp.src(HTML_SRC)
         .pipe(jade())
         .pipe(gulp.dest(DEST))

@@ -1,0 +1,3 @@
+[submodule "htmllint"]
+	path = htmllint
+	url = https://github.com/htmllint/htmllint
